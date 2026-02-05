@@ -1,0 +1,370 @@
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-primary/10 dark:border-primary/20">
+    <div class="px-4 md:px-10 py-4 flex items-center justify-between max-w-7xl mx-auto">
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-3xl">local_florist</span>
+            <h2 class="text-2xl font-bold tracking-tight text-primary dark:text-primary-light">Jane &amp; John</h2>
+        </div>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8">
+            <button (click)="scrollToSection('story')" class="text-sm font-medium hover:text-primary transition-colors bg-transparent border-none cursor-pointer">Our Story</button>
+            <button (click)="scrollToSection('details')" class="text-sm font-medium hover:text-primary transition-colors bg-transparent border-none cursor-pointer">When &amp; Where</button>
+            <button (click)="scrollToSection('gallery')" class="text-sm font-medium hover:text-primary transition-colors bg-transparent border-none cursor-pointer">Gallery</button>
+            <button (click)="scrollToSection('registry')" class="text-sm font-medium hover:text-primary transition-colors bg-transparent border-none cursor-pointer">Registry</button>
+            <button (click)="scrollToSection('rsvp')" class="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-xl text-sm font-bold tracking-wide transition-all shadow-lg shadow-primary/20 cursor-pointer">
+                RSVP
+            </button>
+        </div>
+        <!-- Mobile Menu Icon -->
+        <button class="md:hidden text-primary bg-transparent border-none">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative min-h-[90vh] flex flex-col items-center justify-center p-4 overflow-hidden">
+    <!-- Background Image with Gradient Overlay -->
+    <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed" 
+         style="background-image: linear-gradient(rgba(33, 21, 17, 0.3), rgba(33, 21, 17, 0.5)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCgfweGdYw-lDZ7ISb1gKFCn8wArV5mdI3C4heJm1h5otLjcMvXLn55Yc9E4I1beTMyuJ9t4JIYlZhIZi1E9RH3ETX8gLkrBjl80QQfklwJ35YKVaPXwd4o6BngOwLaNwyMEq7353ODJ0_ACdzYnVVXDX7aitd8Mm5wd0zrbeTWSL-0Pvr19yZGgBs7P5TxeacSXf2I9TxebObD90AZ-slYGhKLc7ukSxTUL0Cz1AdwXbC_aK5ioxMj9REq69hOIE6bHpj5QBkaqw');">
+    </div>
+
+    <div class="relative z-10 flex flex-col items-center text-center gap-6 max-w-3xl animate-fade-in-up">
+        <span class="text-white/90 text-lg md:text-xl font-medium tracking-widest uppercase">We are getting married</span>
+        <h1 class="text-white text-6xl md:text-8xl font-black tracking-tighter leading-none drop-shadow-lg">
+            Jane <span class="text-primary font-serif italic font-normal">&amp;</span> John
+        </h1>
+        <div class="flex items-center gap-4 text-white/90 mt-2">
+            <div class="h-[1px] w-12 bg-white/60"></div>
+            <p class="text-xl md:text-2xl font-light italic">October 15, 2025</p>
+            <div class="h-[1px] w-12 bg-white/60"></div>
+        </div>
+        
+        <button (click)="scrollToSection('story')" class="mt-8 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white border border-white/30 px-8 py-3 rounded-full text-base font-bold transition-all flex items-center gap-2 group cursor-pointer">
+            Celebrate With Us
+            <span class="material-symbols-outlined group-hover:translate-y-1 transition-transform">keyboard_arrow_down</span>
+        </button>
+    </div>
+
+    <!-- Decorative Bottom Curve -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180">
+        <svg class="relative block w-[calc(100%+1.3px)] h-[60px] text-background-light dark:text-background-dark fill-current" data-name="Layer 1" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+        </svg>
+    </div>
+</header>
+
+<!-- Our Story Section -->
+<section id="story" class="py-20 md:py-32 relative overflow-hidden">
+    <!-- Decorative Elements -->
+    <span class="material-symbols-outlined absolute top-10 left-[-20px] text-9xl text-primary/5 dark:text-primary/10 rotate-12 select-none pointer-events-none">spa</span>
+    <span class="material-symbols-outlined absolute bottom-10 right-[-20px] text-9xl text-primary/5 dark:text-primary/10 -rotate-12 select-none pointer-events-none">local_florist</span>
+    
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <h2 class="text-4xl md:text-5xl font-bold text-primary mb-8 font-display italic">Our Story</h2>
+        <p class="text-lg md:text-xl leading-relaxed text-text-main/80 dark:text-text-light/80 mb-10 max-w-2xl mx-auto">
+            We met five years ago at a small coffee shop in Brooklyn. He spilled his latte, she offered a napkin, and the rest is history. From late-night pizza runs to hiking adventures across the country, we have been inseparable ever since. Join us as we start our next chapter together.
+        </p>
+        <div class="flex justify-center gap-4">
+            <div class="w-2 h-2 rounded-full bg-primary/40"></div>
+            <div class="w-2 h-2 rounded-full bg-primary/60"></div>
+            <div class="w-2 h-2 rounded-full bg-primary"></div>
+            <div class="w-2 h-2 rounded-full bg-primary/60"></div>
+            <div class="w-2 h-2 rounded-full bg-primary/40"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Countdown Timer -->
+<section class="py-16 bg-primary/5 dark:bg-white/5 border-y border-primary/10">
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-10">
+            <p class="uppercase tracking-widest text-sm font-bold text-primary mb-2">Counting down the moments</p>
+            <h3 class="text-3xl md:text-4xl font-bold">Until We Say "I Do"</h3>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 md:gap-12 text-center">
+            <!-- Days -->
+            <div class="flex flex-col items-center">
+                <div class="w-20 h-24 md:w-24 md:h-32 bg-white dark:bg-background-dark border border-primary/20 rounded-t-full rounded-b-xl flex items-center justify-center shadow-sm">
+                    <span class="text-3xl md:text-5xl font-bold text-primary font-display">{{ days() }}</span>
+                </div>
+                <span class="mt-3 text-sm font-medium uppercase tracking-wide opacity-70">Days</span>
+            </div>
+            <!-- Hours -->
+            <div class="flex flex-col items-center">
+                <div class="w-20 h-24 md:w-24 md:h-32 bg-white dark:bg-background-dark border border-primary/20 rounded-t-full rounded-b-xl flex items-center justify-center shadow-sm">
+                    <span class="text-3xl md:text-5xl font-bold text-primary font-display">{{ hours() }}</span>
+                </div>
+                <span class="mt-3 text-sm font-medium uppercase tracking-wide opacity-70">Hours</span>
+            </div>
+            <!-- Minutes -->
+            <div class="flex flex-col items-center">
+                <div class="w-20 h-24 md:w-24 md:h-32 bg-white dark:bg-background-dark border border-primary/20 rounded-t-full rounded-b-xl flex items-center justify-center shadow-sm">
+                    <span class="text-3xl md:text-5xl font-bold text-primary font-display">{{ minutes() }}</span>
+                </div>
+                <span class="mt-3 text-sm font-medium uppercase tracking-wide opacity-70">Minutes</span>
+            </div>
+            <!-- Seconds -->
+            <div class="flex flex-col items-center">
+                <div class="w-20 h-24 md:w-24 md:h-32 bg-white dark:bg-background-dark border border-primary/20 rounded-t-full rounded-b-xl flex items-center justify-center shadow-sm">
+                    <span class="text-3xl md:text-5xl font-bold text-primary font-display">{{ seconds() }}</span>
+                </div>
+                <span class="mt-3 text-sm font-medium uppercase tracking-wide opacity-70">Seconds</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Details Section: When & Where (Timeline) -->
+<section id="details" class="py-24 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <!-- Text Details -->
+    <div class="@container">
+        <h2 class="text-4xl font-bold text-primary mb-8 font-display italic">When &amp; Where</h2>
+        <div class="space-y-10 relative pl-8 border-l-2 border-primary/20 ml-3">
+            <!-- Timeline Item 1 -->
+            <div class="relative">
+                <div class="absolute -left-[41px] top-0 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center shadow-lg">
+                    <span class="material-symbols-outlined text-sm">church</span>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold">The Ceremony</h4>
+                    <p class="text-primary font-medium italic mb-1">4:00 PM</p>
+                    <p class="text-text-main/70 dark:text-text-light/70">
+                        The Meadow Garden<br/>
+                        Please arrive 15 minutes early.
+                    </p>
+                </div>
+            </div>
+            <!-- Timeline Item 2 -->
+            <div class="relative">
+                <div class="absolute -left-[41px] top-0 bg-white border-2 border-primary text-primary w-8 h-8 rounded-full flex items-center justify-center">
+                    <span class="material-symbols-outlined text-sm">wine_bar</span>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold">Cocktail Hour</h4>
+                    <p class="text-primary font-medium italic mb-1">5:00 PM</p>
+                    <p class="text-text-main/70 dark:text-text-light/70">
+                        Sunset Terrace<br/>
+                        Drinks and hors d'oeuvres served.
+                    </p>
+                </div>
+            </div>
+            <!-- Timeline Item 3 -->
+            <div class="relative">
+                <div class="absolute -left-[41px] top-0 bg-white border-2 border-primary text-primary w-8 h-8 rounded-full flex items-center justify-center">
+                    <span class="material-symbols-outlined text-sm">restaurant</span>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold">Dinner &amp; Reception</h4>
+                    <p class="text-primary font-medium italic mb-1">6:30 PM</p>
+                    <p class="text-text-main/70 dark:text-text-light/70">
+                        The Grand Barn<br/>
+                        Family style dinner followed by dancing.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Map Preview -->
+        <div class="mt-12 w-full h-64 rounded-2xl overflow-hidden shadow-lg border-4 border-white dark:border-white/10 relative group cursor-pointer">
+            <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
+            <img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" 
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWefdlBatfWbxWxR3JXc7-bmjpqPlwq6HzIOC57Xw6GO_ENEB1daSUdJncjgeOGLu285BdI8ot7_-CzxNS_ImirBgID7aJciufeh72uB8alREhNCf68OLZ-1Hj6sddsBAiYgEtQgQpwwBfFBXpMu5VK9aD4822JFrIR9gCJ63OIEdlrC5aUBrBvhnJKs7lqq2QME1KXbh0-nt1busUl1DEmrEDAwN63Kk-4dzMJdGHn1bkKhv3sUKfaD_IMD8DugH1x4DQu8UolVw" 
+                 alt="Map showing the location of the wedding venue"/>
+            <div class="absolute bottom-4 left-4 bg-white/90 dark:bg-black/80 backdrop-blur px-4 py-2 rounded-lg shadow-sm z-20">
+                <p class="text-xs font-bold uppercase tracking-wide text-primary">Location</p>
+                <p class="text-sm font-semibold">The Meadow Garden, Upstate NY</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Visual Side -->
+    <div class="relative h-full min-h-[500px] w-full hidden md:block">
+        <div class="absolute top-10 left-10 w-64 h-80 rounded-t-full rounded-b-2xl overflow-hidden border-8 border-white dark:border-white/5 shadow-2xl rotate-[-3deg] z-10 hover:rotate-0 transition-transform duration-500">
+            <img class="w-full h-full object-cover" 
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWa6zONnH0jANmr0UY9Xi5p3SJ1XuzkYOBaHRQlWQyQW-qnDFD685-IL-L6s_fNPxyTL_DedQ1bKafodHCmmhpj2J6F4N8EaZy8hayLi8Mwo0uubPByeuEKbz1PVRVYFNpW-AbEtpw70Pe2IwGHoddH3vCHckihepQg1o4VwtrbJk-2ZrCozxx8MxzXivjOsUKceE-n86C9hR_idX9JfxtkaNzYDfUXkDNRsgxmes-P4SP9nYHUDX67tbVClOzcOnuL0rDZBn5FK0" 
+                 alt="Floral wedding bouquet"/>
+        </div>
+        <div class="absolute bottom-10 right-10 w-64 h-80 rounded-t-2xl rounded-b-full overflow-hidden border-8 border-white dark:border-white/5 shadow-2xl rotate-[3deg] z-0 hover:rotate-0 transition-transform duration-500">
+            <img class="w-full h-full object-cover" 
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBR0N4ks7wVDTLkHz2x0X0hVtDIhuRsY1t1o1vT2utwzi1UGpNwE5MxX04__xtp8P4hhnfuoy7AkBQY-Ovry0JpfmAu3Uh3w6U0PiifVoK28gMUM_DGhGIb-8oTfgdYEEAmX60Cm2Ri6iDUB-ut-9wfkpDgyTraABEm6vHtsdCbi3ebLLuTacKeIPj9cGjnPRTAAo2lJ0p0ONKuPTS0C_Mi21dTbUZcHCwI-qD7D_iB8y5oQHq0Gdu2mX5_08jdXWRsqczNKX3wjLk" 
+                 alt="Rustic wooden barn"/>
+        </div>
+        <!-- Floral decor placeholder -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-primary/10 dark:text-white/5 z-[-1]">
+            <span class="material-symbols-outlined text-[300px]">yard</span>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section (Masonry) -->
+<section id="gallery" class="py-20 bg-primary-light/30 dark:bg-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <span class="material-symbols-outlined text-primary text-4xl mb-4">photo_library</span>
+            <h2 class="text-4xl font-bold text-text-main dark:text-text-light font-display italic">Captured Moments</h2>
+        </div>
+        <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+            <!-- Photo 1 -->
+            <div class="break-inside-avoid rounded-2xl overflow-hidden shadow-lg group relative">
+                <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkRfROO_2Cxe1pu49JcxBWvW0EaPhFinOeMhNSrSO6RcEZ1eQ7e-owauTR18V2QPwaQxtqiWCI0h5VzD9V397ewFhyZ6DGHtzkpFLQowVMiK6i_UxoFY3kwic8iZhYiXOCgTppQ-uD40alIqts3sWiqnQAWu6OGHo9s1UpEROH1Zc8S0Q3bSBUvbgqJ_4GEUFco9W2Tp8Iwc82-dFVJgS-onnpkh7M6ZrpbTxSfuLlTKphLsjNKWJLuTj4woA-yquj8o3WE6OXxo0" 
+                     alt="Couple walking hand in hand"/>
+            </div>
+            <!-- Photo 2 -->
+            <div class="break-inside-avoid rounded-2xl overflow-hidden shadow-lg group relative">
+                <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMIhI9T2CNS-SoNbOhgeJXYeDZoQf2Y1ILJ3W0UgrZFQBRAD5xQotBQbAFwqr-KzQwuwC4Tz9pxqtOoovMRJzZ-3vjntikFhYLRnR5tiPBe2lNTzOW4r8BOel8CLy5KnAxnkQYweIO2DIAimm694fOx92sU3HVSfz5E47OGSb2dcXcfB-SIcs-uw2hD59LKSfricDKQ4Eum49DW_TSs6LrYCyuuSiZ9KG4bAaEZmWMuRUySJdk72MEZm8zafx-Voi5Dxn48Rna08E" 
+                     alt="Wedding rings"/>
+            </div>
+            <!-- Photo 3 -->
+            <div class="break-inside-avoid rounded-2xl overflow-hidden shadow-lg group relative">
+                <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtJPagKlYnhSIUMe1wQEol2ZKZPaVahkCJphRnkg6S7avtYypHsxOTGn0iPLHrqS-pOys896pmopj8br3AAA0xebtPI6TAOBp00y5Tvdusp-t-5u_SEtPt4XuccsB6sUOcRrfUKWtnLKwFWZ2cXmHfQ3dGeGuFDvVYDYpUJIYfRP1oIcB-Ag9yMteN1mJG7U3SvjAolFk7l3vJJcg67l-VAw6Tazym4UF978aZ1voqo__NZbp4e3lwPTfqpk8bwm5r5XykOILNHyk" 
+                     alt="Guests laughing"/>
+            </div>
+            <!-- Photo 4 -->
+            <div class="break-inside-avoid rounded-2xl overflow-hidden shadow-lg group relative">
+                <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu132dJuLjzBUhJOpWo_DOT8rkz_fDjV52oQMIjXnIC1d_d-aJ9Wak2kr9fuMfNMpP-rTP9cg1aKhC8NxcpKY7K_gHljt-Gqj4tnyS1m4yS9fdiio2DP7buZveJrHmiBsAJkcEi0ZgjXaKtX24uQggSZQqV2dnVi4J8NzeEszQxtRBGuljL_NPBVLdkwWPpAkku63OYn0Na8JtLet1ZM7nPzGCq4BvEUPG-k5o0-qJvVBh-Xmt0ktk85tfjM8bbIbXtwv4nj6hIao" 
+                     alt="Bride with bouquet"/>
+            </div>
+            <!-- Photo 5 -->
+            <div class="break-inside-avoid rounded-2xl overflow-hidden shadow-lg group relative">
+                <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuuXpik94ZrIc3cbtjFxTsJJ0PZNaF-Lm4mC5nVdVOqAn8vczTfFZipvLBumsN-IBsrxnLVBVRK8I6kwNicgGDQ_Yc8-jPW21t_Cty8OtUfHAAKZSuMUMdpfSxNcvaPzI9WdcR2jxwxtSdXkv74FSZVMqpJYN2je-wXHFMKmu4kBmUYoHHGh4XUpNoaWO9qRkPjw1B8GVRFMhWONcobfSRKS0O88tAkXhJ1KNYS-Z7aD_MAvssoMu9AYUlnSE_y_EMAEyMDtLydCI" 
+                     alt="Couple portrait at sunset"/>
+            </div>
+            <!-- Photo 6 -->
+            <div class="break-inside-avoid rounded-2xl overflow-hidden shadow-lg group relative">
+                <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSr9_o5HgIxHkHtRUPCrg2o_xcXcinPzXS2LZtZYaKAiOY4wqsviqPDDKX2dXB-56FnyUp4fbvxcFTMZCS2ExzWsqAsjBrVpEi_ctGy3IqJh7xqLUZ1ZmdHzRQxbWRi_AaORqwWJGedxBORl3l1YAiu2W28BVJ82rSVH1bM4yBsopBdzeSpxkTWBP6fmWvIhDtjX7aElwf2r9JeV68ikzeZSHrZt-n79Z_erPfbRJjRiJ4AdILaQ9CX7Ri1mI7ys9V21AOH1NM1FE" 
+                     alt="Wedding cake"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Registry / Gift Table -->
+<section id="registry" class="py-24 max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6 font-display italic">The Gift Table</h2>
+    <p class="text-lg text-text-main/80 dark:text-text-light/80 mb-12 max-w-xl mx-auto">
+        Your presence is the greatest gift of all. However, should you wish to help us celebrate with a gift, a registry is held at the following places.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <!-- Registry Option 1 -->
+        <a href="#" class="flex flex-col items-center gap-4 p-8 rounded-2xl border border-primary/20 hover:border-primary/60 hover:shadow-lg transition-all group bg-white dark:bg-white/5 no-underline text-inherit">
+            <span class="material-symbols-outlined text-5xl text-primary group-hover:scale-110 transition-transform">card_giftcard</span>
+            <span class="font-bold text-lg">Target Registry</span>
+        </a>
+        <!-- Registry Option 2 -->
+        <a href="#" class="flex flex-col items-center gap-4 p-8 rounded-2xl border border-primary/20 hover:border-primary/60 hover:shadow-lg transition-all group bg-white dark:bg-white/5 no-underline text-inherit">
+            <span class="material-symbols-outlined text-5xl text-primary group-hover:scale-110 transition-transform">flight_takeoff</span>
+            <span class="font-bold text-lg">Honeymoon Fund</span>
+        </a>
+        <!-- Registry Option 3 -->
+        <a href="#" class="flex flex-col items-center gap-4 p-8 rounded-2xl border border-primary/20 hover:border-primary/60 hover:shadow-lg transition-all group bg-white dark:bg-white/5 no-underline text-inherit">
+            <span class="material-symbols-outlined text-5xl text-primary group-hover:scale-110 transition-transform">home</span>
+            <span class="font-bold text-lg">Home Fund</span>
+        </a>
+    </div>
+</section>
+
+<!-- RSVP Section -->
+<section id="rsvp" class="relative py-24 bg-primary text-white overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 30px 30px;"></div>
+    
+    <div class="relative z-10 max-w-2xl mx-auto px-6 bg-white dark:bg-background-dark text-text-main dark:text-text-light p-8 md:p-12 rounded-3xl shadow-2xl">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold mb-2 font-display">Confirm Attendance</h2>
+            <p class="text-text-main/60 dark:text-text-light/60">Please RSVP by September 1st, 2025</p>
+        </div>
+
+        @if (submitSuccess()) {
+            <div class="bg-green-100 text-green-800 p-6 rounded-xl text-center mb-6 border border-green-200 animate-fade-in-up">
+                <span class="material-symbols-outlined text-4xl mb-2">check_circle</span>
+                <h3 class="text-xl font-bold">Thank You!</h3>
+                <p>Your RSVP has been sent successfully. We can't wait to see you!</p>
+            </div>
+        } @else {
+            <form [formGroup]="rsvpForm" (ngSubmit)="onSubmitRsvp()" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex flex-col gap-2">
+                        <label for="firstName" class="text-sm font-bold ml-1">First Name</label>
+                        <input id="firstName" type="text" formControlName="firstName" placeholder="Jane"
+                               class="w-full px-4 py-3 rounded-xl bg-background-light dark:bg-white/5 border border-primary/20 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all">
+                        @if (rsvpForm.get('firstName')?.touched && rsvpForm.get('firstName')?.invalid) {
+                            <span class="text-red-500 text-xs ml-1">First name is required</span>
+                        }
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="lastName" class="text-sm font-bold ml-1">Last Name</label>
+                        <input id="lastName" type="text" formControlName="lastName" placeholder="Doe"
+                               class="w-full px-4 py-3 rounded-xl bg-background-light dark:bg-white/5 border border-primary/20 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all">
+                        @if (rsvpForm.get('lastName')?.touched && rsvpForm.get('lastName')?.invalid) {
+                            <span class="text-red-500 text-xs ml-1">Last name is required</span>
+                        }
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="email" class="text-sm font-bold ml-1">Email Address</label>
+                    <input id="email" type="email" formControlName="email" placeholder="jane@example.com"
+                           class="w-full px-4 py-3 rounded-xl bg-background-light dark:bg-white/5 border border-primary/20 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all">
+                    @if (rsvpForm.get('email')?.touched && rsvpForm.get('email')?.invalid) {
+                        <span class="text-red-500 text-xs ml-1">Valid email is required</span>
+                    }
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-sm font-bold ml-1">Will you be attending?</label>
+                    <div class="flex gap-4">
+                        <label class="flex-1 cursor-pointer">
+                            <input type="radio" value="accept" formControlName="attending" class="peer sr-only">
+                            <div class="w-full py-3 px-4 rounded-xl border border-primary/30 peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary text-center transition-all hover:bg-primary/5">
+                                Joyfully Accept
+                            </div>
+                        </label>
+                        <label class="flex-1 cursor-pointer">
+                            <input type="radio" value="decline" formControlName="attending" class="peer sr-only">
+                            <div class="w-full py-3 px-4 rounded-xl border border-primary/30 peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary text-center transition-all hover:bg-primary/5">
+                                Regretfully Decline
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="guests" class="text-sm font-bold ml-1">Number of Guests</label>
+                    <select id="guests" formControlName="guests"
+                            class="w-full px-4 py-3 rounded-xl bg-background-light dark:bg-white/5 border border-primary/20 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <button type="submit" [disabled]="isSubmitting()"
+                        class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/30 transition-all mt-4 text-lg disabled:opacity-70 disabled:cursor-not-allowed flex justify-center items-center gap-2 cursor-pointer">
+                    @if (isSubmitting()) {
+                        <span class="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
+                        Sending...
+                    } @else {
+                        Send RSVP
+                    }
+                </button>
+            </form>
+        }
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-8 bg-background-dark text-text-light text-center border-t border-white/10">
+    <div class="flex justify-center items-center gap-2 mb-4">
+        <span class="font-display italic text-2xl">Jane &amp; John</span>
+    </div>
+    <p class="text-sm opacity-60">© 2025 Jane &amp; John Wedding. Built with love.</p>
+</footer>
