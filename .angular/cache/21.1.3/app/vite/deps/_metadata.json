@@ -1,0 +1,40 @@
+{
+  "hash": "e23de55b",
+  "configHash": "d8c26cfb",
+  "lockfileHash": "8c1c8f05",
+  "browserHash": "9bae9384",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "0c039a31",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "ac3ab0f4",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "e6c77a1b",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "d2ace2c0",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-SQLN3HJS": {
+      "file": "chunk-SQLN3HJS.js"
+    },
+    "chunk-52CTTUCP": {
+      "file": "chunk-52CTTUCP.js"
+    }
+  }
+}
